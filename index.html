@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <style>
+      body {
+        background-color: powderblue;
+        margin: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        font-family: "Times New Roman", Times, serif;
+      }
+      button {
+        color: black;
+        background-color: transparent;
+        border: 0.5px solid crimson;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        transition: 0.5s ease;
+        transition-property: background-color, color;
+        margin: 5px 10px;
+        padding: 5px 10px;
+      }
+      button:hover {
+        color: white;
+        background-color: crimson;
+      }
+      li {
+        margin: 5px 10px;
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>To-Do App</h1>
+    <form id="myform" action="#">
+      <input id="ourfield" type="text" autocomplete="off" />
+      <button type="submit">Create Task</button>
+    </form>
+    <h2>Task List</h2>
+    <ul id="tasklist"></ul>
+    <script src="app.js"></script>
+  </body>
+</html>
